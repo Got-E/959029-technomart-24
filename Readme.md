@@ -12,7 +12,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 ### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе сделано
+#### 1. Зарегистрируйтесь на Гитхабе сделано ))))
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
