@@ -1,7 +1,7 @@
-# Личный проект «Техномарт»
+﻿# Личный проект «Техномарт»
 
 * Студент: [Олег Данков](https://up.htmlacademy.ru/htmlcss/24/user/959029).
-* Наставник: Николай Думчев (https://htmlacademy.ru/profile/nikopol_fw)
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw)
 
 ---
 
