@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="top-header">
         <img src="img/main-logo.jpg" width="" height="" alt="Логотип Техномарта"/>
-        <p class="search">Поиск<!-- здесь будет поиск --></p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="search">Поиск<!-- здесь будет поиск --></form>
         <a class="marker-link" href="#" >Закладки</a>
         <a class="corf-link" href="#">Корзина</a>
         <a class="order-link" href="#">Оформить заказ</a>
@@ -42,10 +42,31 @@
         <li><a href="#">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- здесь будет форма -->
-      </section>
+        <p>Фильтр:</p>
+        <form class="" action="https://echo.htmlacademy.ru" method="post">
+          <label for="price">Цена:</label>
+          <input type="range" id="price" name="price" min="0" max="30000" step="10"> <span>0</span> - <span>30000</span>
+          <label for="producer">Производители:</label>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label><input type="checkbox">BOSCH</label>
+            <label><input type="checkbox">ИНТЕРСКОЛ</label>
+            <label><input type="checkbox">MAKIta</label>
+            <label><input type="checkbox">Dewalt</label>
+            <label><input type="checkbox">Hitachi</label>
+          </fieldset>
+          <label><input type="radio" name="feed">Аккумуляторные</label>
+          <label><input type="radio" name="feed">Сетевые</label>
+          <button type="submit" name="button">Показать</button>
+        </form>
+        </section>
+        <section class="sorting">
+          <form action="post" action="https://echo.htmlacademy.tu">
+            <!-- какая-то форма ноя не понимаю как ее сделать -->
+          </form>
+        </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
         <ul class="catalog-list">
