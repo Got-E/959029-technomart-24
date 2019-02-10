@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
     <div class="top-header">
-      <img src="img/main-logo.jpg" width="" height="" alt="Логотип Техномарта"/>
+      <div class="logo">
+        <!-- хотелось бы оратить внимание на это место -->
+        <img src="img/logo.svg" width="111px" height="18px" alt="Логотип Техномарта">
+      </div>
       <form action="https://echo.htmlacademy.ru" method="post" class="search">
         <input type="search" id="search" name="search"  placeholder="Поиск">
       </form>
@@ -15,10 +21,10 @@
       <a class="corf-link" href="#">Корзина</a>
       <a class="order-link" href="#">Оформить заказ</a>
     </div>
-    <div>
+    <div class="middle-header">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p>+7 (812) 555-05-55</p>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="phone">+7 (812) 555-05-55</p>
+      <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <ul class="user-navigation">
         <li>войти</li>
         <li>Регистрация</li>
@@ -40,7 +46,9 @@
     <section>
       <h2 class="visually-hidden">Наши услуги</h2>
       <ul class="services">
-        <li class="services-item">Материалы <a href="#">На любой вкус</a>
+        <li class="services-item">Материалы
+          <a href="#">На любой вкус</a>
+          <span class="new">Новинка</span>
         </li>
         <li class="services-item">Инструмент <a href="#">на все случаи</a>
         </li>
@@ -51,17 +59,17 @@
       </div>
       <div class="services-item">Доствака<a href="#">Бесплатно</a>
       </div>
-      <div>
+      <div class="slider">
         <h3>Дрели</h3>
         <p>Соседям на радость!</p>
         <img class="" src="img/drill.jpg" width="620px" height="266px" alt="Великолепная дрель в руках у брутального мужчины">
-        <a href="#">Открыть каталог</a>
+        <a class="button" href="#">Открыть каталог</a>
       </div>
-      <div>
+      <div class="slider">
         <h3>Перфораторы</h3>
         <p>Настоящие мужские игрушки</p>
         <img class="" src="img/perforator.jpg" width="620px" height="266px" alt="Огромный перворатор в руках у брутального мужчины">
-        <a href="#">Открыть каталог</a>
+        <a class="button" href="#">Открыть каталог</a>
       </div>
     </section>
     <section class="popular">

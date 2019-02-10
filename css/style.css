@@ -1,0 +1,128 @@
+/* общие стили */
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum-Regular", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-variant: normal; /*почему не работает? */
+  color: #000000; /* почему свойство не применилось к сылкам?*/
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.container{
+
+}
+
+.visually-hidden{
+
+}
+a.button{
+  font-size: 14px;
+  line-height: 18px;
+  color:#FFFFFF;
+  background-color: #ee3643;
+}
+/* стили для хедера */
+.main-header{
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #f4f7f9;
+
+}
+.main-header h1{
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.top-header{
+  background-color: #293449;
+}
+
+.top-header a{
+  color:#FFFFFF;
+}
+
+.logo {
+  width: 220px;
+  height: 47px;
+  /* padding: 13px 54px 16px 55px; */
+  background-color: #ee3643;
+}
+
+.middle-header .phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+.middle-header .adress{
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.main-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.user-navigation{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #32425c;
+}
+
+.main-navigation a {
+  color: #FFFFFF;
+}
+/* стили основной части */
+.services{
+  list-style: none;
+}
+
+.services-item{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #000000; /*заглушка*/
+}
+
+.services-item a{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.slider h3{
+ font-size: 36px;
+ line-height: 36px;
+ font-weight: 700;
+ color: #FFFFFF;
+ background-color: #000000; /*заглушка*/
+}
+
+.slider p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #000000; /*заглушка*/
+}
