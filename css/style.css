@@ -1,128 +1,203 @@
 /* общие стили */
-body{
+body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum-Regular", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  font-variant: normal; /*почему не работает? */
-  color: #000000; /* почему свойство не применилось к сылкам?*/
-  text-transform: uppercase;
-
+  color: #000000;
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
-
+  color: red;
 }
 
-.container{
-
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.visually-hidden{
+.visually-hidden {}
 
-}
-a.button{
+a.button {
   font-size: 14px;
   line-height: 18px;
-  color:#FFFFFF;
+  color: #FFFFFF;
   background-color: #ee3643;
 }
+
 /* стили для хедера */
-.main-header{
+.main-header {
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 18px;
   background-color: #f4f7f9;
-
 }
-.main-header h1{
+
+.main-header h1 {
+  width: 250px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
-.top-header{
-  background-color: #293449;
+.top-header {
+    background-color: #293449;
 }
 
-.top-header a{
-  color:#FFFFFF;
+.top-header .container{
+  display: flex;
+  align-items: center;
+
+}
+
+.top-header a {
+  width: 150px;
+  color: #FFFFFF;
 }
 
 .logo {
+  box-sizing: border-box;
   width: 220px;
   height: 47px;
-  /* padding: 13px 54px 16px 55px; */
+  padding: 13px 54px 16px 55px;
   background-color: #ee3643;
+  box-shadow:0px 5px 0 0 rgb(180, 41, 51);
+}
+
+.search input{
+  min-width: 270px;
+  background-color: #293449;
+}
+
+.marker-link{
+  padding-left: 50px;
+}
+
+.corf-link{
+  padding-left: 50px;
+}
+
+a.order-link{
+  padding: 14px 20px 13px 20px;
+  padding-left: 20px;
+  background-color: #63a63e;
+}
+
+.middle-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 160px;
+}
+
+.middle-header .info{
+  width: 300px;
+  padding-left: 50px;
+
+}
+
+.middle-header .contacts{
+  width: 340px;
 }
 
 .middle-header .phone {
+  margin: 0;
+  padding: 13px 52px 11px 74px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border: solid 3px #ffffff;
+  border-radius: 5px;
 }
-.middle-header .adress{
+
+.middle-header .adress {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
+.middle-header
 .main-navigation,
 .user-navigation {
   list-style: none;
 }
 
-.user-navigation{
+.user-navigation {
+  display: flex;
+  width: 300px;
   font-size: 21px;
   line-height: 21px;
 }
 
-.main-navigation{
-  font-size: 14px;
-  line-height: 24px;
+.user-navigation a {
+  margin-left: 10px;
+  padding: 11px 25px 14px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation {
+  display: flex;
+  padding: 0;
+  margin:0;
+  list-style: none;
   color: #FFFFFF;
   background-color: #32425c;
 }
 
 .main-navigation a {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  min-height: 60px;
+  font-size: 17px;
+  line-height: 17px;
+  outline: 1px solid red;
   color: #FFFFFF;
 }
+
 /* стили основной части */
-.services{
+.services {
   list-style: none;
 }
 
-.services-item{
+.services-item {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #FFFFFF;
-  background-color: #000000; /*заглушка*/
+  background-color: #000000;
+  /*заглушка*/
 }
 
-.services-item a{
+.services-item a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #FFFFFF;
 }
 
-.slider h3{
- font-size: 36px;
- line-height: 36px;
- font-weight: 700;
- color: #FFFFFF;
- background-color: #000000; /*заглушка*/
+.slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #000000;
+  /*заглушка*/
 }
 
-.slider p{
+.slider p {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
-  background-color: #000000; /*заглушка*/
+  background-color: #000000;
+  /*заглушка*/
 }
