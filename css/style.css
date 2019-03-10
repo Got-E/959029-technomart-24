@@ -697,7 +697,7 @@ a.corf-link:active {
   display: flex;
   justify-content: space-between;
   padding-top: 79px;
-  margin-bottom: 89px;
+  margin-bottom: 86px;
 }
 
 .compani-info {
@@ -751,39 +751,167 @@ a.corf-link:active {
 }
 
 /* футер */
-
-.top-footer{
+.top-footer {
   background-color: #32425c;
   margin: 0;
+  padding-bottom: 50px;
 }
-.footer{
+
+.footer {
+  padding-top: 21px;
   background-color: #293449;
 }
 
-.footer-flex{
+.footer-flex {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
 }
-.top-footer .logo{
+
+.top-footer .logo {
   padding-top: 20px;
   padding-left: 41px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   height: 68px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.top-footer .left-coloum{
+.top-footer .left-coloum {
   width: 400px;
 }
 
-.top-footer .left-coloum p{
+.top-footer .left-coloum p {
   margin: 0;
   padding: 0;
   padding-left: 2px;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer-navigation {
+  padding-top: 19px;
+}
+
+.footer-navigation div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-navigation a {
+  display: block;
+  padding: 19px 20px 14px 39px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-navigation div:last-child a {
+  color: #ffda96;
+}
+
+.footer-navigation div a:last-child {
+  padding-right: 0;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-copyright {
+  display: block;
+  margin-right: 15px;
+  width: 250px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-sosial {
+  display: flex;
+  padding: 0;
+  padding-left: -10px;
+  list-style: none;
+}
+
+.sosial-button {
+  display: block;
+  width: 42px;
+  height: 42px;
+  font-size: 1px;
+  color: transparent;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.sosial-vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sosial-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sosial-insta {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sosial-button:hover,
+.sosial-button:active {
+  background-color: #ee3643;
+}
+
+.footer-copyright-email {
+  display: block;
+  width: 140px;
+  margin-right: 48px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-copyright-email a {
+  color: #ffd180;
+}
+
+.footer-copyright-email a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright-email a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.footer-copyright-academy {
+  display: block;
+  width: 100px;
+  margin-right: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-copyright-academy a {
+  color: #ffd180;
+}
+
+.footer-copyright-academy a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright-academy a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 /* разметка каталога */
 .catalog-list {
