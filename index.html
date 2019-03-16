@@ -37,9 +37,14 @@
         <p class="phone">+7 (812) 555-05-55</p>
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <ul class="user-navigation">
+      <ul class="user-navigation none">
         <li><a class="login" href="#">Войти</a></li>
         <li><a class="checkin" href="#">Регистрация</a></li>
+      </ul>
+      <ul class="user-navigation login ">
+        <li><a class="name" href="#">Равшан Джамшутович</a></li>
+        <li><a class="orders" href="#">Мои заказы</a></li>
+        <li><a class="office" href="#">Личный кабинет</a></li>
       </ul>
     </div>
     <nav class="container">
@@ -262,7 +267,6 @@
             <a href="#">Спецпредложения</a>
           </div>
         </div>
-        </ul>
       </div>
     </div>
     <div class="footer">
@@ -284,19 +288,30 @@
       </div>
     </div>
   </footer>
-  <section class="modal-map none">
+  <section class="modal modal-map none">
     <h2 class="visually-hidden">Адрес</h2>
-    <img src="img/map-big.jpg" alt="Большая Конюшенная ул.19, Санкт-Петербург">
-    <button class="close" tupe="button">Закрыть</button>
+    <img src="img/map-big.jpg" width="940" height="446" alt="Большая Конюшенная ул.19, Санкт-Петербург">
+    <button class="button-close">Закрыть</button>
   </section>
-  <section class="modal-feedback none">
+  <section class="modal modal-feedback none">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form action="post">
-      <label>Ваше имя<input type="text" placeholder="Имя Фамилия"></label>
-      <label>Ваш e-mail:<input type="text" placeholder="email@example.com"></label>
-      <label>Текст письма<textarea rows="3" placeholder="В свободной форме"></textarea></label>
-      <button tupe="submit">Отправить</button>
-      <button class="close" tupe="button">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback">
+      <label>Ваше имя:<br>
+        <input type="text" placeholder="Имя Фамилия">
+      </label>
+      <label>Ваш e-mail:<br>
+        <input type="text" placeholder="email@example.com">
+      </label>
+
+      <label>Текст письма:<br>
+        <textarea rows="3" placeholder="В свободной форме"></textarea>
+      </label>
+      </div>
+      <div class="background">
+        <button class="button" tupe="submit">Отправить</button>
+      </div>
+      <button class="button-close">Закрыть</button>
     </form>
   </section>
 </body>
