@@ -1150,6 +1150,15 @@ a.corf-link:active {
 }
 
 /*cетка каталога */
+.logo a{
+  display: block;
+  padding: 0;
+  background-color: transparent;
+
+}
+.corf-link.unvoid{
+  background-color: #ee3643;
+}
 .catalog-top {
   margin-top: -37px;
 }
