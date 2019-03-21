@@ -112,12 +112,20 @@ button[tupe="button"]:active {
   background-color: #293449;
 }
 
-.logo {
-  box-sizing: border-box;
+a.logo {
+  display: block;
   width: 220px;
   padding: 13px 54px 7px 55px;
   background-color: #ee3643;
-  box-shadow: 0px 5px 0 0 rgb(180, 41, 51);
+  box-shadow: 0px 5px 0 0 rgb(180, 41, 51)
+}
+
+a.logo:hover {
+  background-color: #ca2c37;
+}
+
+a.logo:active {
+  background-color: #ba2732;
 }
 
 .search {
@@ -272,7 +280,7 @@ a.corf-link:active {
   margin: 0;
   margin-top: 9px;
   width: 270px;
-  padding: 10px 0 11px 70px;
+  padding: 10px 0 8px 70px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -317,13 +325,14 @@ a.corf-link:active {
 }
 
 .user-navigation li {
+  position: relative;
   padding-top: 7px;
 }
 
 .user-navigation a {
   box-sizing: border-box;
   position: relative;
-  padding: 10px 27px 10px 45px;
+  padding: 10px 27px 10px 47px;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -353,12 +362,31 @@ a.corf-link:active {
 }
 
 .user-navigation.login {
-  margin-top: 25px;
+  margin-top: 19px;
 }
 
 .user-navigation .name {
   display: block;
   width: 300px;
+}
+
+.user-navigation .logout {
+  position: absolute;
+  top: 19px;
+  right: -40px;
+  background-color: transparent;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
+.user-navigation .logout:hover,
+.user-navigation .logout:focus {
+  opacity: 1;
+}
+
+.user-navigation .logout:active {
+  opacity: 0.25;
 }
 
 .user-navigation .name:hover,
@@ -381,25 +409,11 @@ a.corf-link:active {
   opacity: 0.25;
 }
 
-.name::after {
-  content: "";
-  width: 20px;
-  height: 17px;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background-image: url("../img/icon-logout.svg");
-  opacity: 0.25;
-}
-
-.user-navigation .name:hover::after,
-.user-navigation .name:focus::after,
 .user-navigation .name:hover::before,
 .user-navigation .name:focus::before {
   opacity: 1;
 }
 
-.user-navigation .name:active::after,
 .user-navigation .name:active::before {
   opacity: 0.25;
 }
@@ -563,15 +577,14 @@ a.corf-link:active {
 
 .slider {
   position: relative;
-  margin-bottom: 53px;
+  margin-bottom: 29px;
+  padding-top: 25px;
+  padding-left: 24px;
   width: 620px;
   height: 266px;
 }
 
 .slider h3 {
-  position: absolute;
-  top: 25px;
-  left: 24px;
   margin: 0;
   padding: 0;
   font-size: 36px;
@@ -582,10 +595,10 @@ a.corf-link:active {
 }
 
 .slider p {
-  position: absolute;
-  top: 62px;
-  left: 24px;
+  display: block;
+  max-width: 300px;
   margin: 0;
+  margin-bottom: 123px;
   padding: 0;
   font-size: 18px;
   line-height: 24px;
@@ -593,10 +606,8 @@ a.corf-link:active {
 }
 
 .slider .button {
-  position: absolute;
-  top: 207px;
-  left: 24px;
   width: 195px;
+  padding-left: 7px;
 }
 
 .slider .left {
@@ -610,8 +621,8 @@ a.corf-link:active {
 
 .slider .right {
   position: absolute;
-  top: 114px;
-  right: 20px;
+  top: 115px;
+  right: 44px;
   width: 22px;
   height: 40px;
   background: url("../img/icon-right.svg") no-repeat 0 0;
@@ -620,6 +631,38 @@ a.corf-link:active {
 .slider .left:hover,
 .slider .right:hover {
   outline: 1px solid #FFFFFF;
+}
+
+.slider-drill {
+  background-image: url("../img/drill.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-perforator {
+  background-image: url("../img/perforator.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider .radio-slider-position {
+  display: flex;
+  width: 50px;
+  position: absolute;
+  bottom: 60px;
+  left: 295px;
+}
+
+.radio-slider-position label {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.radio-slider:checked+label {
+  background-color: #ee3643;
 }
 
 .headline {
@@ -867,7 +910,8 @@ a.corf-link:active {
   padding-top: 20px;
   padding-left: 41px;
   margin-bottom: 28px;
-  height: 68px;
+  width: 125px;
+  height: 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -1150,15 +1194,10 @@ a.corf-link:active {
 }
 
 /*cетка каталога */
-.logo a{
-  display: block;
-  padding: 0;
-  background-color: transparent;
-
-}
-.corf-link.unvoid{
+.corf-link.unvoid {
   background-color: #ee3643;
 }
+
 .catalog-top {
   margin-top: -37px;
 }
@@ -1300,9 +1339,11 @@ h1.catalog {
   height: 22px;
   background-image: url("../img/filter-button.svg");
 }
-.scale div:last-child{
+
+.scale div:last-child {
   left: 150px;
 }
+
 .filter .price {
   position: relative;
   box-sizing: border-box;
@@ -1335,7 +1376,8 @@ h1.catalog {
   border-top: 1px solid #c5c5c5;
 }
 
-.filter .input-hidden {
+.filter .input-hidden,
+.slider .input-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1567,7 +1609,7 @@ ul.catalog-list {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
