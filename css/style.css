@@ -382,7 +382,7 @@ a.corf-link:active {
 .user-navigation .logout {
   position: absolute;
   top: 19px;
-  right: -40px;
+  right: -43px;
   background-color: transparent;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
@@ -853,14 +853,15 @@ a.corf-link:active {
 }
 
 .compani-info {
-  flex: 0 0 519px;
+  flex: 0 0 522px;
   margin-bottom: 86px;
 }
 
 .compani-info ul {
   list-style: none;
   margin: 0;
-  margin-bottom: 36px;
+  margin-top: -3px;
+  margin-bottom: 33px;
   padding: 0;
   padding-left: 37px;
   font-size: 18px;
@@ -887,8 +888,9 @@ a.corf-link:active {
 
 .flex p {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+  letter-spacing: 0.135px;
 }
 
 .contacts {
@@ -897,7 +899,7 @@ a.corf-link:active {
 
 .contacts p {
   display: block;
-  width: 179px;
+  width: 185px;
   margin-bottom: 30px;
 }
 
@@ -939,7 +941,7 @@ a.corf-link:active {
 .top-footer .logo {
   padding-top: 20px;
   padding-left: 41px;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   width: 125px;
   height: 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -1384,7 +1386,7 @@ h1.catalog {
 .filter .price {
   position: relative;
   box-sizing: border-box;
-  width: 95px;
+  width: 96px;
   height: 38px;
   margin-top: 7px;
   margin-bottom: 27px;
@@ -1539,7 +1541,7 @@ h1.catalog {
 
 .sorting .sorting-functions {
   margin-left: 65px;
-  margin-right: 55px;
+  margin-right: 46px;
   letter-spacing: 0.7px;
 }
 
@@ -1585,8 +1587,13 @@ h1.catalog {
 .sorting .active {
   color: #ee3643;
   border: 0;
+  opacity: 1;
 }
-
+.sorting-growth.active,
+.sorting-wane.active{
+  opacity: 0.3;
+  color: transparent;
+}
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1806,6 +1813,7 @@ ul.catalog-list {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+  letter-spacing: 0.15px;
   text-transform: uppercase;
 }
 
