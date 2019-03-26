@@ -1371,14 +1371,14 @@ h1.catalog {
 .price-control .scale-control {
   position: absolute;
   top: -10px;
-  left: -11px;
+  left: 1px;
   width: 20px;
   height: 22px;
   background-image: url("../img/filter-button.svg");
 }
 
 .scale div:last-child {
-  left: 150px;
+  left: 141px;
 }
 
 .filter .price {
