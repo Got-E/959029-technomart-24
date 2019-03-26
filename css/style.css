@@ -266,7 +266,7 @@ a.corf-link:active {
 }
 
 .info h1 {
-  width: 196px;
+  width: 203px;
   margin-top: 22px;
 }
 
@@ -918,7 +918,7 @@ a.corf-link:active {
 }
 
 .contacts .map {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 /* футер */
@@ -941,7 +941,7 @@ a.corf-link:active {
 .top-footer .logo {
   padding-top: 20px;
   padding-left: 41px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   width: 125px;
   height: 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -1007,7 +1007,6 @@ a.corf-link:active {
 .footer-sosial {
   display: flex;
   padding: 0;
-  padding-left: -10px;
   list-style: none;
 }
 
@@ -1528,7 +1527,6 @@ h1.catalog {
   margin: 0;
   padding: 0;
   height: 15px;
-  font-weight: 700;
   color: #000000;
   border-bottom: 2px dotted #ee3643;
   opacity: 0.3;
@@ -1589,11 +1587,13 @@ h1.catalog {
   border: 0;
   opacity: 1;
 }
+
 .sorting-growth.active,
-.sorting-wane.active{
+.sorting-wane.active {
   opacity: 0.3;
   color: transparent;
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1616,7 +1616,7 @@ ul.catalog-list {
 .catalog-item {
   position: relative;
   box-sizing: border-box;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   width: 220px;
   min-height: 318px;
   border: solid 1px #eaeaea;
@@ -1767,7 +1767,7 @@ ul.catalog-list {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 42px;
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
